@@ -8,6 +8,6 @@
     </block>
   </view>
   <view class="usermotto">
-    <checkbox-group model:value>{{list}}</checkbox-group>
+    <list></list>
   </view>
 </view>

@@ -1,0 +1,4 @@
+/* component/list.wxss */
+.checkbox  {
+  display:inline-block;
+}

@@ -1,0 +1,14 @@
+<!--component/list.wxml-->
+<view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input type="text" class="weui-input" auto-focus placeholder="请输入待办事项"value="{{}}" bindinput="inputContent"/>
+    </view>
+  </view>
+  
+  <checkbox-group name="todolist">
+    <label class="checkbox-group" wx:for="{{list}}">
+      <checkbox class="checkbox" value='{{item.name}}' checked='{{item.checked}}'>{{item.name}}</checkbox>
+    </label>
+  </checkbox-group>
+</view>
