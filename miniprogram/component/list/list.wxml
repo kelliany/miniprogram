@@ -2,7 +2,8 @@
 <view>
   <view class="weui-cells weui-cells_after-title">
     <view class="weui-cell weui-cell_input">
-      <input type="text" class="weui-input" auto-focus placeholder="请输入待办事项"value="{{}}" bindinput="inputContent"/>
+      <input type="text" class="weui-input" auto-focus placeholder="请输入待办事项"value="{{inputContent}}" bindinput="getInputContent"/>
+      <button bindtap="submitInput">提交</button>
     </view>
   </view>
   

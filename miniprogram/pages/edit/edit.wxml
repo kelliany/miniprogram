@@ -1,2 +1,10 @@
 <!--pages/edit/edit.wxml-->
-<text>pages/edit/edit.wxml</text>
+<view class="container">
+  <view class="top-nav">
+    <view id="" bindtap="changeTab" class="top-btn {{tab_selected_no==0?'top-hoverd-btn':''}}">未完成</view>
+    <view id="" bindtap="changeTab" class="top-btn">已完成</view>
+  </view>
+  <view>未完成</view>
+  <view>已完成</view>
+
+</view>

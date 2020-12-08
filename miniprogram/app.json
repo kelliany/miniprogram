@@ -10,5 +10,18 @@
     "navigationBarTitleText": "To Do List",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "列表",
+      "iconPath": "",
+      "selectedIconPath": ""
+    },{
+      "pagePath": "pages/edit/edit",
+      "text": "编辑",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }]
+  },
   "sitemapLocation": "sitemap.json"
 }

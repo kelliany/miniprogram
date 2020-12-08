@@ -26,16 +26,23 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    inputContent(event) {
+    getInputContent(event) {
       let val = event.detail.value;
+      
+      this.setData({
+       input:val
+      })
+      
+    },
+    submitInput(event) {
       this.data.list.push({
-        name: val,
+        name:this.data.input,
         checked:0
       })
       this.setData({
-        list:this.data.list
+        list:this.data.list,
+        inputContent:''
       })
-      
     }
   }
 })
